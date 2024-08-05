@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    --color-interacoes: #181818;
+    --color-border: #e6e6e6;
+}
+
+p {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5%;
+
+    margin-right: 15%;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+header h1 {
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: calc(100vh-20px);
+
+
+} 
+
+.foto-teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 50px;
+}
+
+.foto-perfil {
+    width: 10%;
+    border-radius: 50%;
+    transition: 0.9s;
+
+}
+
+.foto-perfil:hover {
+    width: 10%;
+}
+
+.foto-feed {
+    border-radius: 2%;
+    width: 20%;
+    transition: 0.9s;
+}
+
+
+.interacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.interacoes a {
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-interacoes);
+    font-size: 15px;
+
+    transition: 0.9s;
+}
+
+.interacoes a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+@media (max-width: 1670px) {
+    .container {
+        width: 100%;
+    }
+
+    .foto-perfil {
+        width: 10%;
+    }
+
+    .foto-feed {
+        width: 40%;
+    }
+
+    .interacoes {
+        margin-right: 30%;
+    }
+}
+
+
+@media (max-width: 880px) {
+    .container {
+        width: 80%;
+
+    }
+
+    .foto-teste {
+        margin-right: 20%;
+    }
+
+    .foto-perfil {
+        width: 10%;
+    }
+
+    .foto-feed {
+        width: 80%;
+    }
+
+    .interacoes {
+        margin-right: 60%;
+    }
+}
